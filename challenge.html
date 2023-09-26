@@ -153,6 +153,8 @@
 
         <div class="row">
             <div class="col-xs-12">
+                <h1><b>Physical Retail Challenges</b></h1>
+                <br/>
                 <p>
                     As part of this workshop, four challenges will be opened using the introduced real-world physical retail data collected in grocery store environments, 
                     named Grocery Vision 2023. This dataset contains individual shopping actions of anonymized customers using a standard US shopping cart. Four challenges are:
@@ -163,13 +165,23 @@
         <div class="row" , style="margin-left: auto; margin-top: -40px;">
             <p>
             <ul>
-                <li class='uili'> Track 1a: Video Temporal Action Localization (TAL); <br/><br/>
-                </li>
-                <li class='uili'> Track 1b: Video Spatial Temporal Action Localization (STAL);<br/><br/>
-                </li>
-                <li class='uili'> Track 2: Object Quantity Estimation;<br/><br/>
-                </li>
-                <li class='uili'> Track 3: Appearance Based Verification-Image Retrieval;<br/><br/>
+                <li class='uili'> <b>Track 1: Video Temporal Action Localization (TAL) and Spatial Temporal Action Localization (STAL):</b> <br/><br/>
+                    <img src="./img/example_stal.png" style="width:50%;margin-left: 20%;"/><br/><br/>
+
+                    TAL and STAL challenges aims at localizing the actions of interest in the video frames. For TAL, the output of the model is the temporal segments of the actions of interest. For STAL, the output of the model is the bounding boxes localizing the actions of the interest. In this task, we focus on the products and actions that associate with
+                    potential shopping behaviors, i.e. products that is taken into the basket, and products that is taken out of the basket.<br/><br/> 
+
+                    In this task, participants will be provided with 73,683 images and annotation pairs for download as training set. 
+
+                    <br/><br/>
+                </li> 
+                <li class='uili'> <b>Track 2: Appearance Based Verification (ABV):</b> <br/><br/>
+                    <img src="./img/example_abv.png" style="width:50%; margin-left: 20%;"/><br/><br/>
+
+                    ABV challenge aims at validating if the model is able to match the query product image to the corresponding image in gallery. Participants will be given a training dataset consisting of images for different products and are expected to design methods for accurate matching product identities. During testing, held out query images will be used to probe the proposed model. The model is expected to output a ranking list of items based on the matching the model predicts. To evaluate model's performance, metrics such as CMC will be used.<br/><br/> 
+
+                    In this task, participants will be provided with 74,200 images as training set. Each image file name contains the barcode of the corresponding product which is considered as the ID for matching. 
+
                 </li>
             </ul>
             </p>
@@ -178,8 +190,15 @@
         <div class="row">
             <div class="col-xs-12">
                 <p>
-                    Details are comming soon.
+                    <b>Download the dataset:</b><br/><br/>
+                    This dataset is released under CC BY-NC 4.0 license, please review the <a href="docs/LICENSE.pdf">license</a>, and send us an email to weijianl@amazon.com to download the dataset with your: (1) name, (2) email (affliation email, not @gmail etc.), (3) purpose of using the dataset. We will response with the download link as soon as possible.
                 </p>
+
+                <p>
+                    <b>Submit results:</b> <br/><br/>
+                    To participate in the evaluation, please submit the files necessary to run inference with your method. It will be runned on held out testsets to benchmark with the other submissions.
+                </p>
+                    
             </div>
         </div>
     </div>
