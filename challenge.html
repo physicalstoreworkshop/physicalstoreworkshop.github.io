@@ -29,7 +29,7 @@
             display: block;
             width: 200px;
         }
-
+    
         .bdtext {
             float: right;
             width: 460px;
@@ -50,7 +50,9 @@
         }
 
         table {
-            margin: 0 auto;
+            font-family: arial, sans-serif;
+            /* border-collapse: collapse; */
+            width: 100%;
         }
 
         th, td {
@@ -141,6 +143,7 @@
 
             div {
                 position: relative;
+                display: table;
             }
 
             div w {
@@ -149,7 +152,75 @@
                 top: 60px;
                 color: white;
             }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+
+            tr:nth-child(even) {
+            background-color: #ADD8E6;
+            }
         </style>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h1><b>Challenge Results</b></h1>
+                <p>
+                    Congratulations to challenge winners:
+                </p>
+                <br/>
+                <h2><b>Track 2</b></h2>
+                <p>
+                    <ul>
+                        <li class='uili'> <b>1st Place: Fujitsu Research </b> <br/><br/>
+                        </li>
+                        <li class='uili'> <b>2nd Place: Kathy Wu (Amazon MENA Tech) and Sarthak Srivastava (Amazon Global) </b> <br/><br/>
+                        </li>
+                        <li class='uili'> <b>3rd Place: Alin-Ionut Popa, George Leotescu, Daniel Voinea (Amazon Trustworthy Shopping Experience) </b> <br/><br/>
+                        </li>
+                    </ul>
+                </p>
+                
+            </div>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <th>Participants</th>
+                    <th>AUC CMC (Top-30)</th>
+                    <th>AUC CMC (Top-5)</th>
+                    <th>mAP</th>
+                </tr>
+                <tr>
+                    <td>Fujitsu Research</td>
+                    <td>96.307</td>
+                    <td>78.929</td>
+                    <td>96.955</td>
+                </tr>
+                <tr>
+                    <td>Kathy Wu (Amazon MENA Tech) and Sarthak Srivastava (Amazon Global)</td>
+                    <td>96.307</td>
+                    <td>78.929</td>
+                    <td>96.955</td>
+                </tr>
+                <tr>
+                    <td>Alin-Ionut Popa, George Leotescu, Daniel Voinea (Amazon Trustworthy Shopping Experience)</td>
+                    <td>96.307</td>
+                    <td>78.929</td>
+                    <td>96.955</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
 
         <div class="row">
             <div class="col-xs-12">
@@ -162,7 +233,7 @@
             </div>
         </div>
 
-        <div class="row" , style="margin-left: auto; margin-top: -40px;">
+        <div class="row" , style="margin-left: auto;">
             <p>
             <ul>
                 <li class='uili'> <b>Track 1: Video Temporal Action Localization (TAL) and Spatial Temporal Action Localization (STAL):</b> <br/><br/>
